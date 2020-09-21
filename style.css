@@ -133,6 +133,10 @@ h3 {
   padding: 30px 30px 20px;
 }
 
+.portfolio-section__projects {
+  margin: 20px 0;
+}
+
 .portfolio-section__title {
   margin-bottom: 0;
   text-align: center;
@@ -237,10 +241,52 @@ h3 {
 
 /* Small Tablet */
 @media screen and (min-width: 620px) {
+  .welcome-section__text {
+    grid-column: 1/5;
+  }
+
+  .welcome-section__image {
+    grid-column: 5/9;
+  }
+
+  .welcome-section__image img {
+    width: 100%;
+  }
+
+  .portfolio-section__projects {
+    margin-top: 40px;
+  }
+
+  .projects__project-link {
+    display: block;
+    grid-column: span 4;
+    margin: 20px 0;
+  }
+
+  .projects__project-link:last-child {
+    grid-column: 3/7;
+  }
+
+  .projects__project-link * {
+    margin: 10px 20%;
+    max-width: 60%;
+  }
+
+  .project-link__title {
+    text-align: center;
+  }
+
+  .skills-section {
+    padding: 30px 100px;
+  }
+
+  .footer-section {
+    background-size: 20%;
+  }
 }
 
 /* Large Tablets and Laptops */
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 960px) {
   body {
     font-size: 18px;
   }
